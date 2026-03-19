@@ -2,7 +2,7 @@ local cache = require("slick.cache")
 local polygonMesh = require("slick.collision.polygonMesh")
 local enum = require("slick.enum")
 local tag = require("slick.tag")
-local util = require("slick.util")
+local util = require("slick.util.init")
 
 --- @class slick.collision.shapeGroup
 --- @field tag any

@@ -5,7 +5,7 @@ local polygonMesh = require("slick.collision.polygonMesh")
 local shapeGroup = require("slick.collision.shapeGroup")
 local tag = require("slick.tag")
 local enum = require("slick.enum")
-local util = require("slick.util")
+local util = require("slick.util.init")
 
 --- @param x number
 --- @param y number

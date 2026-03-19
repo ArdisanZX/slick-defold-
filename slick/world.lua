@@ -9,7 +9,7 @@ local transform = require("slick.geometry.transform")
 local defaultOptions = require("slick.options")
 local responses = require("slick.responses")
 local worldQuery = require("slick.worldQuery")
-local util = require("slick.util")
+local util = require("slick.util.init")
 local slickmath = require("slick.util.slickmath")
 local slicktable = require("slick.util.slicktable")
 

@@ -1,5 +1,5 @@
 local point = require("slick.geometry.point")
-local util = require("slick.util")
+local util = require("slick.util.init")
 local pool = require("slick.util.pool")
 local slicktable = require("slick.util.slicktable")
 

@@ -1,7 +1,7 @@
 local slickmath = require("slick.util.slickmath")
 local point = require("slick.geometry.point")
 local segment = require("slick.geometry.segment")
-local util = require("slick.util")
+local util = require("slick.util.init")
 
 --- @class slick.geometry.triangulation.sweep
 --- @field type slick.geometry.triangulation.sweepType

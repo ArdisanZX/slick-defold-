@@ -1,4 +1,4 @@
-local PATH = (...):gsub("[^%.]+$", "")
+-- local PATH = (...):gsub("[^%.]+$", "")
 
 --- @module "slick.cache"
 local cache
@@ -49,37 +49,37 @@ local worldQueryResponse
 local meta
 
 local function load()
-    local requireImpl = require
-    local require = function(path)
-        return requireImpl(PATH .. path)
-    end
-
-    local patchedG = {
-        __index = _G
-    }
-
-    local g = { require = require }
-    g._G = g
-
-    setfenv(0, setmetatable(g, patchedG))
+--     local requireImpl = require
+--     local require = function(path)
+--         return requireImpl(PATH .. path)
+--     end
+-- 
+--     local patchedG = {
+--         __index = _G
+--     }
+-- 
+--     local g = { require = require }
+--     g._G = g
+-- 
+--     setfenv(0, setmetatable(g, patchedG))
 
     cache = require("slick.cache")
-    collision = require("slick.collision")
+    collision = require("slick.collision.init")
     draw = require("slick.draw")
     entity = require("slick.entity")
     enum = require("slick.enum")
-    geometry = require("slick.geometry")
-    navigation = require("slick.navigation")
+    geometry = require("slick.geometry.init")
+    navigation = require("slick.navigation.init")
     defaultOptions = require("slick.options")
     responses = require("slick.responses")
     shape = require("slick.shape")
     tag = require("slick.tag")
-    util = require("slick.util")
+    util = require("slick.util.init")
     world = require("slick.world")
     worldQuery = require("slick.worldQuery")
     worldQueryResponse = require("slick.worldQueryResponse")
 
-    meta = require("slick.meta")
+    meta = require("slick.meta.init")
 end
 
 do

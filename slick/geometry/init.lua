@@ -2,7 +2,7 @@
 
 local geometry = {
     clipper = require("slick.geometry.clipper"),
-    triangulation = require("slick.geometry.triangulation"),
+    triangulation = require("slick.geometry.triangulation.init"),
     point = require("slick.geometry.point"),
     ray = require("slick.geometry.ray"),
     rectangle = require("slick.geometry.rectangle"),

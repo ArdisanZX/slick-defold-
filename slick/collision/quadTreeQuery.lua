@@ -2,7 +2,7 @@ local point = require("slick.geometry.point")
 local ray = require("slick.geometry.ray")
 local rectangle = require("slick.geometry.rectangle")
 local segment = require("slick.geometry.segment")
-local util = require("slick.util")
+local util = require("slick.util.init")
 local slicktable = require("slick.util.slicktable")
 local slickmath = require("slick.util.slickmath")
 
